@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+:root{
+
+--dark-cyan: hsl(185, 75%, 39%);
+--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+--dark-grayish-blue: hsl(227, 10%, 46%);
+
+--dark-gray: hsl(0, 0%, 59%);
+--white:hsl(0,0%,100%);
+
+}
+body{
+    position:absolute;
+    inline-size: 100%;
+    block-size: 100%;
+    background:url(./images/bg-pattern-top.svg);
+    background-color: var(--dark-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    border-radius: 15px;
+    max-inline-size: 375px;
+    inline-size: 90%;
+    background: var(--white) ;
+    margin-block-end: 1rem;
+}
+.bluish-color{
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    block-size:8rem;
+    background:url(./images/bg-pattern-card.svg);
+}
+.content-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    margin-block-start: -3rem;
+    border-radius: 50%;
+    border: 6px solid var(--white);
+}
+.name{
+    margin-block-start:1.2rem ;
+    font-size: 18px;
+    color: var(--very-dark-desaturated-blue);
+    font-family:'Kumbh Sans';
+    font-weight: bolder;
+    
+}
+.age{
+    color: var(--dark-grayish-blue);
+    margin-inline-start: 3px;
+}
+.location{
+    color:var(--dark-grayish-blue) ;
+    margin-block-start:0.8rem;
+    font-family:'Kumbh Sans';
+    font-weight: medium;
+}
+.line-through{
+    block-size: 0.8px;
+    background-color: var(--dark-gray);
+    margin-block:2rem ;
+    border: none;
+    inline-size: 100%;
+}
+.flex-bottom{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    inline-size: 100%;
+    margin-block-end: 2rem;
+}
+.flex-bottom div{
+    text-align: center;
+}
+
+.stats{
+    display:block;
+    margin-block-end: 0.3rem;
+    font-family:'Kumbh Sans';
+    font-weight: bolder;
+    letter-spacing: normal;
+
+    color: var(--very-dark-desaturated-blue);
+    font-size:18px;
+
+
+}
+.flex-bottom div p{
+    
+    font-family:'Kumbh Sans';
+    font-weight: smaller;
+    font-size: smaller;
+    color: var(--dark-grayish-blue);
+    letter-spacing: 1.3px;
+    
+}
+
+
+
+
+
+
+
+
+
+
